@@ -9,6 +9,7 @@ onMounted(async () => {
 	try {
 		// Загружаем SVG
 		//const response = await fetch('/images/hohloma.svg');
+		const baseURL = useRuntimeConfig().app.baseURL
 		const response = await fetch(`${baseURL}images/hohloma.svg`);
 		const svgText = await response.text();
 
