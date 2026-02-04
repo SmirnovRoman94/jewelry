@@ -4,24 +4,14 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/main.css'],
   
+  ssr: false, // ← ВАЖНО для статики!
+  
   app: {
     baseURL: '/jewelry/',
-    buildAssetsDir: '_nuxt', // ← ВЕРНИ '_nuxt' (стандарт)
-    head: {
-      link: [
-        { rel: 'stylesheet', href: '/jewelry/_nuxt/entry.css' } // если нужно форсировать
-      ]
-    }
+    buildAssetsDir: '_nuxt'
   },
 
-  // ДОБАВЬ ЭТО для production:
   nitro: {
-    preset: 'static' // для статической генерации
-  },
-
-  // Убедись что Tailwind правильно собирается:
-  tailwindcss: {
-    cssPath: '~/assets/main.css',
-    configPath: 'tailwind.config.js'
+    preset: 'static'
   }
 })
