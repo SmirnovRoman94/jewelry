@@ -3,13 +3,15 @@
     <div class="my_border">
       <h1 class="slider-heading" :class="{ 'is-visible': isVisible }">Back to dream</h1>
       <div class="img-holder">
-        <img src="/images/girl.webp" alt="image description">
+        <img :src="`${baseURL}images/girl.webp`" alt="image description">
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+const baseURL = useRuntimeConfig().app.baseURL
+
 const isVisible = ref(false);
 
 onMounted(() => {
