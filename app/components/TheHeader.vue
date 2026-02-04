@@ -1,11 +1,12 @@
 <template>
 	<div class="flex justify-between items-center gap-4 p-4 max-w-screen-xl mx-auto">
 		<svg viewBox="0 0 600 100" class="handwriting-svg" :class="{ 'ready': isReady }">
-			<text x="10" y="70" font-family="GreatVibes" font-size="48">
-			Ювелирные Традиции России
+			<text x="10" y="70" font-family="Raleway" font-size="35" font-weight="100">
+			<!--Ювелирные Традиции России-->
+			Эксклюзивная выставка - продажа
 			</text>
 		</svg>
-		<nav>
+		<nav class="pt-7">
 			<ul class="flex gap-4">
 				<li class="my_li">
 					О нас
@@ -45,10 +46,11 @@ onMounted(() => {
 
 .handwriting-svg text {
 	fill: none;
-	stroke: #f5f0e8;
+	stroke: #d7d6d6;
 	stroke-width: 1;
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
+	color: #d7d6d6;
 }
 
 /* Анимация запускается только после добавления класса ready */

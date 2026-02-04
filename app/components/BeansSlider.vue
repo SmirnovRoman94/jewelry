@@ -1,10 +1,26 @@
 <template>
   <div class="beans-slider">
     <div class="my_border">
-      <h1 class="slider-heading" :class="{ 'is-visible': isVisible }">Back to dream</h1>
-      <div class="img-holder">
-        <img :src="`${baseURL}images/girl.webp`" alt="image description">
-      </div>
+		<div class="flex w-full justify-between px-[15px] absolute">
+			<div class="w-[20%] p-[20px]">
+				<Hohloma/>
+			</div>
+			<div class="w-[20%] p-[20px]">
+				<Hohloma/>
+			</div>
+		</div>
+		<h1 class="slider-heading" :class="{ 'is-visible': isVisible }">Ювелирные Традиции России</h1>
+		<div class="img-holder">
+			<img :src="`${baseURL}images/girl.webp`" alt="image description">
+		</div>
+		<div class="flex w-full justify-between px-[15px] absolute bottom-0">
+			<div class="w-[36%]">
+				<Hohloma/>
+			</div>
+			<div class="w-[36%]">
+				<Hohloma/>
+			</div>
+		</div>
     </div>
   </div>
 </template>
@@ -35,13 +51,15 @@ onMounted(() => {
 
 .slider-heading {
 	font-size: 80px;
-	line-height: 170px;
+	/*line-height: 170px;*/
 	letter-spacing: 9px;
 	text-align: center;
 	margin: 0;
 	opacity: 0;
 	transform: scale(0.5);
 	transition: all 0.6s ease 0.4s;
+	font-family: 'PoiretOne';
+	font-weight: 700;
 }
 
 .slider-heading.is-visible {
@@ -88,7 +106,7 @@ onMounted(() => {
 	left: 24px;
 	right: 28px;
 	bottom: 0px;
-	padding: 230px 0;
+	padding: 260px 0;
 	border: 14px solid currentColor;
 	border-top: none;
 	z-index: 2;

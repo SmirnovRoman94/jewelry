@@ -7,8 +7,8 @@ export default defineNuxtConfig({
   ssr: false, // ← ВАЖНО для статики!
   
   app: {
-    baseURL: '/jewelry/',
-    buildAssetsDir: '_nuxt'
+    baseURL: '/jewelry/', // путь названия репозитория
+    buildAssetsDir: '_nuxt' 
   },
 
   nitro: {
