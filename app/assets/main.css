@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Шрифты */
+@font-face {
+  font-family: 'GreatVibes';
+  src: url('/assets/fonts/GreatVibes-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PoiretOne';
+  src: url('/assets/fonts/PoiretOne-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/assets/fonts/Raleway-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/assets/fonts/Raleway-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Базовые стили */
+@layer base {
+	* {
+		/*background-color: #0d0c0b;*/
+		color: #f5f0e8;
+	}
+}
+html {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(343deg, #7c6a6b,#60422a,#451703);
+	background-attachment: fixed;
+}
+
+body,
+#__nuxt {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+
+/*@layer base {
+  * {
+    font-family: 'PoiretOne', sans-serif;
+  }
+}*/
