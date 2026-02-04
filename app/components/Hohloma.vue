@@ -8,7 +8,8 @@ const containerRef = ref(null);
 onMounted(async () => {
 	try {
 		// Загружаем SVG
-		const response = await fetch('/images/hohloma.svg');
+		//const response = await fetch('/images/hohloma.svg');
+		const response = await fetch(`${baseURL}images/hohloma.svg`);
 		const svgText = await response.text();
 
 		// Вставляем SVG в контейнер
