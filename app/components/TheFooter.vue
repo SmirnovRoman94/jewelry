@@ -10,7 +10,7 @@
 
 <style scoped>
 .my_footer {
-	position: fixed;
+	/*position: fixed;*/
 	bottom: 0;
 	text-align: center;
 	width: 100%;

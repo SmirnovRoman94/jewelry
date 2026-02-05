@@ -1,21 +1,21 @@
 <template>
-	<div class="flex justify-between items-center gap-4 p-4 max-w-screen-xl mx-auto">
+	<div class="flex justify-between items-center gap-4 p-4 max-w-screen-xl mx-auto w-full">
 		<svg viewBox="0 0 600 100" class="handwriting-svg" :class="{ 'ready': isReady }">
 			<text x="10" y="70" font-family="Raleway" font-size="35" font-weight="100">
 			<!--Ювелирные Традиции России-->
-			Эксклюзивная выставка - продажа
+			<a @click="scrollToSection('home', $event)" href="#home">Эксклюзивная выставка - продажа</a>
 			</text>
 		</svg>
 		<nav class="pt-7">
 			<ul class="flex gap-4">
 				<li class="my_li">
-					О нас
+					<a @click="scrollToSection('about', $event)" href="#about">О нас</a>
 				</li>
 				<li class="my_li">
-					Коллекция
+					<a @click="scrollToSection('collection', $event)" href="#collection">Коллекция</a>
 				</li>
 				<li class="my_li">
-					Связаться с нами
+					<a @click="scrollToSection('visit', $event)" href="#visit">Связаться с нами</a>
 				</li>
 			</ul>
 		</nav>
@@ -31,6 +31,17 @@ onMounted(() => {
 		isReady.value = true
 	}, 100)
 })
+
+const scrollToSection = (id, event) => {
+	event.preventDefault();
+	const element = document.getElementById(id);
+	if (element) {
+		element.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+	}
+};
 </script>
 
 <style scoped>
