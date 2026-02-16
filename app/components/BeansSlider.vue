@@ -2,10 +2,10 @@
   <div class="beans-slider">
     <div class="my_border">
 		<div class="flex w-full justify-between px-[15px] absolute">
-			<div class="w-[20%] p-[20px]">
+			<div class="w-[15%] p-[20px]">
 				<Hohloma/>
 			</div>
-			<div class="w-[20%] p-[20px]">
+			<div class="w-[15%] p-[20px]">
 				<Hohloma/>
 			</div>
 		</div>
@@ -14,10 +14,10 @@
 			<img :src="`${baseURL}images/girl.webp`" alt="image description">
 		</div>
 		<div class="flex w-full justify-between px-[15px] absolute bottom-0">
-			<div class="w-[36%]">
+			<div class="w-[20%]">
 				<Hohloma/>
 			</div>
-			<div class="w-[36%]">
+			<div class="w-[20%]">
 				<Hohloma/>
 			</div>
 		</div>
@@ -60,6 +60,7 @@ onMounted(() => {
 	transition: all 0.6s ease 0.4s;
 	font-family: 'PoiretOne';
 	font-weight: 700;
+	padding: 0 48px;
 }
 
 .slider-heading.is-visible {
