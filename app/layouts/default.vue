@@ -2,7 +2,7 @@
 	<div class="parallax-container">
 		<!-- Фоновый слой -->
 		<div class="background-layer">
-      		<div class="bg-gradient" :style="{ transform: `translateY(${bgOffset}px)` }"></div>
+      		<div class="bg-gradient" :style="{ backgroundImage: `url(${baseURL}images/back.webp)`, transform: `translateY(${bgOffset}px)` }"></div>
     	</div>
 
 		<TheHeader/>
@@ -16,6 +16,8 @@
 <script setup>
 import TheHeader from '@/components/TheHeader.vue';
 import TheFooter from '@/components/TheFooter.vue';
+
+const baseURL = useRuntimeConfig().app.baseURL
 
 const bgOffset = ref(0);
 
@@ -67,7 +69,6 @@ body {
 .bg-gradient {
 	width: 100%;
 	height: 300vh;
-	background-image: url('./images/back.webp');
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
