@@ -16,5 +16,6 @@
 	text-align: center;
 	width: 100%;
 	font-family: 'PoiretOne', sans-serif;
+	margin-bottom: 40px;
 }
 </style>

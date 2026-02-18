@@ -68,10 +68,7 @@ body {
 
 .bg-gradient {
 	width: 100%;
-	min-height: 300vh;
-	/* вместо height */
-	height: calc(300vh + 100px);
-	/* запас */
+	height: 300vh;
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
