@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h2>Plan Your Visit</h2>
-		<div class="mt-5 flex gap-8">
+		<div class="mt-5 flex gap-8 flex flex-wrap sm:flex-nowrap mb-8 sm:mb-0">
 			<div v-for="(el, index) in plans" :key="index" class="plan">
 				<h3>{{ el.title }}</h3>
 				<div class="text" v-html="el.text"></div>
@@ -57,5 +57,20 @@ h3 {
 .text {
 	font-family: 'Raleway';
 
+}
+
+@media (max-width: 640px) {
+	h2 {
+		font-size: 24px;
+		padding-top: 20px;
+	}
+
+	h3 {
+		font-size: 14px;
+	}
+
+	.text {
+		font-size: 14px;
+	}
 }
 </style>

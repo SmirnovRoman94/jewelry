@@ -68,33 +68,23 @@ body {
 
 .bg-gradient {
 	width: 100%;
-	height: 300vh;
+	min-height: 300vh;
+	/* вместо height */
+	height: calc(300vh + 100px);
+	/* запас */
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
 	will-change: transform;
 }
 
-/*html,
-body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	overflow: hidden;
-}*/
-
-/*
-.page-container {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-}*/
-
-/*.scroll-container {
-	flex: 1;
-	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
-	scroll-behavior: smooth;
-	height: 100%;
-}*/
+@media (max-width: 768px) {
+	.bg-gradient {
+		height: 400vh;
+		/* или больше */
+		/* или добавить scale */
+		transform: scale(1.2);
+		transform-origin: top center;
+	}
+}
 </style>

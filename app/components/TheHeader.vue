@@ -1,8 +1,8 @@
 <template>
 	<div class="fixed  w-[100vw] z-10">
-		<div class="flex justify-between items-end gap-4 p-4 max-w-screen-xl mx-auto w-full">
-			<svg viewBox="0 0 900 100" class="handwriting-svg" :class="{ 'ready': isReady }">
-				<text x="10" y="70" class="my_text">
+		<div class="flex justify-between items-center lg:items-end gap-4 p-4 max-w-screen-xl mx-auto w-full">
+			<svg viewBox="0 0 900 70" class="handwriting-svg" :class="{ 'ready': isReady }">
+				<text x="10" y="45" class="my_text">
 				<!--Ювелирные Традиции России-->
 				<a @click="scrollToSection('home', $event)" href="#home">Эксклюзивная выставка - продажа</a>
 				</text>
@@ -21,7 +21,7 @@
 				</ul>
 			</nav>
 
-			<div class="block lg:hidden">
+			<div class="block lg:hidden mb-1">
 				<button @click="showMenu" :class="{ 'opacity-0': isMenu }">
 					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M5 7H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,7 +40,7 @@
 			<!-- Меню -->
 			<div 
 			:class="isMenu ? 'translate-x-0' : 'translate-x-full'"
-			class="fixed top-0 right-0 w-1/2 h-screen shadow-lg transition-transform duration-300 ease-in-out z-50"
+			class="fixed top-0 right-0  h-screen shadow-lg transition-transform duration-300 ease-in-out z-50 my_menu"
 			>
 				<div class="p-[20px]">
 					<button class="flex justify-end w-full mb-5" @click="isMenu = false">
@@ -168,5 +168,36 @@ watchEffect(() => {
 	font-family: 'Raleway';
 	font-size: 35px;
 	font-weight: 100;
+}
+
+.my_menu {
+	width: 50%;
+}
+
+@media (max-width: 1023px) {
+	.handwriting-svg {
+		width: 90%;
+		height: auto;
+	}
+
+	.my_text {
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 480px) {
+	.my_menu {
+		width: 100%;
+	}
+
+	.my_text {
+		font-size: 50px;
+	}
+
+	/*.my_text a {
+		font-family: 'Raleway';
+		font-size: 150px;
+		font-weight: 100;
+	}*/
 }
 </style>

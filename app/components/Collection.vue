@@ -117,4 +117,18 @@ h2 {
 	margin: 0;
 	font-size: 14px;
 }
+
+@media (max-width: 1024px) {
+	.card {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 640px) {
+	h2 {
+		font-size: 24px;
+		padding-top: 20px;
+	}
+}
 </style>
