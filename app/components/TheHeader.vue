@@ -95,9 +95,15 @@ const scrollToSection = (id, event) => {
 	const element = document.getElementById(id);
 	if (element) {
 		isMenu.value = false;
-		element.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start'
+		//element.scrollIntoView({
+		//	behavior: 'smooth',
+		//	block: 'start'
+		//});
+		const offsetTop = element.offsetTop;
+
+		window.scrollTo({
+			top: offsetTop,
+			behavior: 'smooth'
 		});
 	}
 };
