@@ -90,24 +90,40 @@ onMounted(() => {
 	}, 100)
 })
 
+//const scrollToSection = (id, event) => {
+//	event.preventDefault();
+//	const element = document.getElementById(id);
+//	if (element) {
+//		isMenu.value = false;
+//		element.scrollIntoView({
+//			behavior: 'smooth',
+//			block: 'start'
+//		});
+//	}
+//};
+
 const scrollToSection = (id, event) => {
 	event.preventDefault();
-	const element = document.getElementById(id);
-	if (element) {
-		isMenu.value = false;
-		//element.scrollIntoView({
-		//	behavior: 'smooth',
-		//	block: 'start'
-		//});
-		const offsetTop = element.offsetTop;
+	isMenu.value = false;
 
-		window.scrollTo({
-			top: offsetTop,
-			behavior: 'smooth'
-		});
-	}
+	// Отключить snap перед прокруткой
+	document.documentElement.style.scrollSnapType = 'none';
+
+	setTimeout(() => {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			});
+
+			// Вернуть snap через 1 секунду
+			setTimeout(() => {
+				document.documentElement.style.scrollSnapType = 'y mandatory';
+			}, 1000);
+		}
+	}, 300); // Не 2000! Достаточно 300ms
 };
-
 const isMenu = ref(false);
 
 function showMenu() {
