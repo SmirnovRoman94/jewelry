@@ -50,12 +50,13 @@ h2 {
 h3 {
 	font-family: 'PoiretOne';
 	text-transform: uppercase;
-	color: #c9a962;
+	color: #ffffff;
 	padding-bottom: 10px;
 }
 
 .text {
-	font-family: 'Raleway';
+	font-family: 'PoiretOne', sans-serif;
+	color: #ffffff;
 
 }
 
