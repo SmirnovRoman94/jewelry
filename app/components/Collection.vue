@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<h2>Featured Pieces</h2>
-		<p class="info">A selection from the current exhibition.</p>
+		<h2>Коллекция</h2>
+		<p class="info">Ювелирные украшения ручной работы</p>
 		<div class="mt-5 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 			<div v-for="(el, index) in collection" :key="index" class="card" >
 				<img :src="`${baseURL}images/${el.image}`"/>
@@ -20,34 +20,34 @@ const baseURL = useRuntimeConfig().app.baseURL
 
 const collection = [
 	{
-		title: 'Radiant Solitaire',
-		text: 'Platinum & diamond, c. 1920',
-		image: 'about.webp'
+		title: 'Брошь «Goddess of the Universe»',
+		text: 'Жёлтое и белое золото, чёрные таитянские жемчужины & бриллианты',
+		image: '1.webp'
 	},
 	{
-		title: 'Emerald Cascade',
-		text: 'Gold & emerald, contemporary',
-		image: 'about.webp'
+		title: 'Серьги «Ancient Aztec Spirit»',
+		text: 'Белое золото, ажурная резьба по металлу в стиле майя/ацтеков',
+		image: '2.webp'
 	},
 	{
-		title: 'Pearl Strand',
-		text: 'South Sea pearls, 18K gold',
-		image: 'about.webp'
+		title: 'Серьги «Pearl Blossom Dream»',
+		text: 'Золото высокой пробы, крупные розовые жемчужины Mabe & коньячный сапфир',
+		image: '5.webp'
 	},
 	{
-		title: 'Midnight Band',
-		text: 'Black diamond & white gold',
-		image: 'about.webp'
+		title: 'Кольцо «Moon Night Garden»',
+		text: 'Золото и таитянская чёрная жемчужина',
+		image: '4.webp'
 	},
 	{
-		title: 'Art Deco Bracelet',
-		text: 'Platinum, sapphire & diamond',
-		image: 'about.webp'
+		title: 'Серьги «Passion Fire Drop»',
+		text: 'Золото, брилианты & родолит гранат',
+		image: '3.webp'
 	},
 	{
-		title: 'Ruby Cluster',
-		text: 'Yellow gold & Burmese ruby',
-		image: 'about.webp'
+		title: 'Кольцо «Autumn Blossom Story»',
+		text: 'Жемчужина Mabe, бриллианты & цитрин',
+		image: '6.webp'
 	}
 ]
 </script>

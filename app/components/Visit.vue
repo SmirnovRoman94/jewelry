@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<h2>Plan Your Visit</h2>
+	<div class="w-full mx-auto max-w-screen-xl">
+		<h2>Связаться с нами</h2>
 		<div class="mt-5 flex gap-8 flex flex-wrap sm:flex-nowrap mb-8 sm:mb-0">
 			<div v-for="(el, index) in plans" :key="index" class="plan">
 				<h3>{{ el.title }}</h3>
@@ -14,16 +14,16 @@
 
 const plans = [
 	{
-		title: 'Dates',
-		text: '<span>March 15 — August 30, 2025</span>'
+		title: 'Даты и время',
+		text: '<span>11-14 июня 2026</span><br/><span>Ежедневно с 11:00-19:00</span><br/><span>Вход: свободный</span>'
 	},
 	{
-		title: 'Location',
-		text: '<span>Museum of Applied Arts 1 Design Square, Gallery Wing</span>'
+		title: 'Место',
+		text: '<span>Музей связи имени А.С. Попова,</span><br/><span>Санкт-Петербург, Почтамтская ул., 7</span>'
 	},
 	{
-		title: 'Hours',
-		text: '<span>Tue — Sun: 10:00 — 18:00</span><br/><span>Thursday late: until 21:00</span>'
+		title: 'Контакты',
+		text: '<a href="tel:+79006209520">+7 (900) 620-95-20</a><br/><a href="tel:+79517227254">+7 (951) 722-72-54</ф>'
 	},
 ]
 </script>
@@ -71,6 +71,10 @@ h3 {
 
 	.text {
 		font-size: 14px;
+	}
+
+	.plan {
+		padding: 16px 12px;
 	}
 }
 </style>

@@ -162,14 +162,14 @@ onMounted(() => {
 <template>
   <div class="beans-slider">
     <div class="my_border">
-		<div class="flex w-full justify-between px-[15px] absolute corner-top">
+		<!--<div class="flex w-full justify-between px-[15px] absolute corner-top">
 			<div class="corner-item">
 				<Hohloma/>
 			</div>
 			<div class="corner-item">
 				<Hohloma/>
 			</div>
-		</div>
+		</div>-->
 		<h1 class="slider-heading" :class="{ 'is-visible': isVisible }">Ювелирные Традиции России</h1>
 		<div class="img-holder">
 			<img :src="`${baseURL}images/girl.webp`" alt="image description">
