@@ -1,6 +1,6 @@
 <template>
 	<footer class="my_footer">
-		<p>© 2026 Smirnov Roman. Все права защищены.</p>
+		<p>© 2026 ООО «ЮТР». Все права защищены.</p>
 	</footer>
 </template>
 
