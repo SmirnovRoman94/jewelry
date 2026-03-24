@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   
   app: {
     baseURL: process.env.NUXT_BASE_URL || '/jewelry/',
-    buildAssetsDir: '_nuxt' 
+    buildAssetsDir: '_nuxt',
   },
 
   nitro: {

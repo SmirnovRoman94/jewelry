@@ -23,6 +23,8 @@ definePageMeta({
 	layout: 'default'
 });
 
+const config = useRuntimeConfig()
+
 useHead({
 	title: 'Ювелирные Традиции России',
 	meta: [
@@ -31,6 +33,9 @@ useHead({
 			content: 'Эксклюзивная выставка-продажа. Вас ожидает богатая история русского ювелирного исскуства! Широкий ассортимент, личное общение с авторами и атмосфера истории',
 		}
 	],
+	link: [
+		{ rel: 'icon', type: 'image/png', href: `${config.app.baseURL}logo.png` }
+	]
 });
 
 useSeoMeta({
