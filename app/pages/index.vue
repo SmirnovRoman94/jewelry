@@ -40,7 +40,7 @@ useSeoMeta({
 	ogDescription: 'Эксклюзивная выставка-продажа. Вас ожидает богатая история русского ювелирного исскуства! Широкий ассортимент, личное общение с авторами и атмосфера истории',
 	//ogImage: 'http://utrexpo.ru/about.webp',
 	//ogUrl: 'http://utrexpo.ru',
-	ogImage: 'http://w904642y.beget.tech/about.webp',
+	ogImage: 'http://w904642y.beget.tech/images/about.webp',
 	ogUrl: 'http://w904642y.beget.tech',
 	ogType: 'website',
 })

@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/main.css'],
   
-  ssr: false, // ← ВАЖНО для статики!
+  ssr: true, // ← ВАЖНО для статики!
   
   app: {
     baseURL: '/', // путь названия репозитория
