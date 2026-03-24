@@ -4,10 +4,10 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/main.css'],
   
-  ssr: true, // ← ВАЖНО для статики!
+  ssr: false, // ← ВАЖНО для статики!
   
   app: {
-    baseURL: '/', // путь названия репозитория
+    baseURL: '/jewelry/', // путь названия репозитория а когда будем собирать убираем  /jewelry
     buildAssetsDir: '_nuxt' 
   },
 
