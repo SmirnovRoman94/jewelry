@@ -133,10 +133,11 @@ function showMenu() {
 const menuContent = [{ name: 'about', text: 'О нас' }, { name: 'collection', text: 'Коллекция' }, { name: 'visit', text: 'Связаться с нами' }];
 
 watchEffect(() => {
+	if (!import.meta.client) return;
+
 	if (!isMenu.value) {
 		document.body.style.overflow = '';
-	}
-	else {
+	} else {
 		document.body.style.overflow = 'hidden';
 	}
 });
