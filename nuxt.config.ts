@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   ssr: false, // ← ВАЖНО для статики!
   
   app: {
-    baseURL: '/jewelry/', // путь названия репозитория
+    baseURL: '/', // путь названия репозитория
     buildAssetsDir: '_nuxt' 
   },
 
